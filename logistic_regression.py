@@ -2,6 +2,10 @@ from __future__ import print_function
 import numpy as np
 import matplotlib.pyplot as plt
 import tensorflow as tf
+import os
+
+# Hide TensorFlows warning messages
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 # Import MNIST data
 from tensorflow.examples.tutorials.mnist import input_data

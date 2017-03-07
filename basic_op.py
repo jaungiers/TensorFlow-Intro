@@ -2,6 +2,10 @@
 from __future__ import print_function
 
 import tensorflow as tf
+import os
+
+# Hide TensorFlows warning messages
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 #Use constant function to define constanst node in tensorflow computation graph
 a = tf.constant(1)

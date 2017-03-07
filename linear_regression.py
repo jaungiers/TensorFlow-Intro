@@ -3,6 +3,11 @@ from __future__ import print_function
 import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
+import os
+
+# Hide TensorFlows warning messages
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+
 rng = np.random
 
 # Different parameters for learning
